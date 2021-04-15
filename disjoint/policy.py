@@ -38,8 +38,8 @@ class linucb_disjoint_policy():
         return chosen_arm
 
     def store_arm_index(self, arms_index_array):
-        # Arms_features_array is multidimension array of shape (K_arms, 1+arm_dimensions), where 1 is for arm_index
+        # Arms_features_array - многомерный массив размерности (K_arms, 1+arm_dimensions)
 
-        # Loop through all arms to store the individual arms
+        # Цикл по всем ручкам, чтобы сохранить отдельные ручки
         for i in range(self.K_arms):
             self.linucb_arms[i].arm_index = arms_index_array[i]
