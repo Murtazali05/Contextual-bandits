@@ -40,6 +40,6 @@ class linucb_disjoint_policy():
     def store_arm_index(self, arms_index_array):
         # Arms_features_array - многомерный массив размерности (K_arms, 1+arm_dimensions)
 
-        # Цикл по всем ручкам, чтобы сохранить отдельные ручки
+        # Цикл по всем ручкам, чтобы сохранить отдельные ручки (movies index)
         for i in range(self.K_arms):
             self.linucb_arms[i].arm_index = arms_index_array[i]

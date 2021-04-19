@@ -6,7 +6,7 @@ from hybrid.policy import linucb_hybrid_policy
 
 def ctr_simulator(K_arms, d, k, alpha, epochs, top_movies_index, top_movies_features,
                   filtered_data, user_features, steps_printout):
-    # Initiate policy
+    # Инициализируем policy
     linucb_hybrid_policy_object = linucb_hybrid_policy(K_arms=K_arms, d=d, k=k, alpha=alpha)
 
     # Store arm specific features
